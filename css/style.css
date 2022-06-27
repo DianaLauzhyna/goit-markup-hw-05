@@ -833,14 +833,14 @@ div .portfolio-images li {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button-app:hover,
 .button-all:hover,
 .button-site:hover,
-.button-app:hover,
 .button-design:hover,
 .button-marketing:hover,
+.button-app:focus,
 .button-all:focus,
 .button-site:focus,
-.button-app:focus,
 .button-design:focus,
 .button-marketing:focus {
   background-color: var(--link-color);

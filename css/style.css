@@ -370,11 +370,6 @@ nav ul li:last-child {
   margin-right: 8px;
 }
 
-.backdrop {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -389,6 +384,12 @@ nav ul li:last-child {
   display: flex;
   justify-content: end;
 }
+
+.backdrop {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -774,7 +775,6 @@ div .portfolio-images li {
   margin-bottom: 0;
 }
 
-
 .overlay-image-portfolio {
   position: relative;
   width: 370px;
@@ -797,7 +797,7 @@ div .portfolio-images li {
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; 
   width: 100%;
   height: 100%;
   opacity: 0;

@@ -78,6 +78,18 @@ li {
 
 ul.link-nav li a.current {
   color: var(--link-color);
+  position: relative;
+}
+
+ul.link-nav li a.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--link-color);
 }
 
 .link-nav,
@@ -705,12 +717,11 @@ address li:last-child {
   color: var(--main-color);
 }
 
-.socials-footer {
-  margin-bottom: 100px;
-}
+
 
 footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .socials-footer-tittle {
@@ -790,6 +801,10 @@ footer .container {
   display: flex;
 }
 
+.portfolio-images-one img {
+  display: block;
+}
+
 .portfolio-images-text {
   padding-top: 20px;
   padding-left: 24px;
@@ -833,30 +848,35 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   height: 294px;
 }
 
+
 .overlay-image-portfolio:hover .overlay {
   opacity: 1;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
 }
+
+
 
 .portfolio-image {
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  color: rgba(33, 150, 243, 0.9);
-  
+  left: 0;
   width: 100%;
   height: 100%;
-  opacity:0;
-  font-size: 20px;
+  opacity: 0;
   padding: 20px;
-  text-align: center;
+  transform: translatey(100%);
+  transition: transform 250ms ease;
 }
 
-.overlay > p {
+.overlay> p {
   width: 322px;
   height: 168px;
   font-size: 18px;

@@ -332,7 +332,9 @@ nav ul li:last-child {
   color: var(--main-color);
 }
 
-.section-three-img-one, .section-three-img-three, .section-three-img-two {
+.section-three-img-one,
+.section-three-img-three,
+.section-three-img-two {
   display: block;
 }
 
@@ -792,7 +794,9 @@ div .portfolio-images li {
   width: 100%;
   height: 100%;
   opacity: 0;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translatey(100%);
   transition: transform 250ms ease;
 }

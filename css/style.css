@@ -23,7 +23,8 @@ li,
 h1,
 h2,
 h3,
-p, img {
+p,
+img {
   margin: 0;
   padding: 0;
 }
@@ -195,7 +196,6 @@ nav ul li:last-child {
 }
 
 .main-page-section-one {
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -299,39 +299,6 @@ nav ul li:last-child {
   margin-bottom: 30px;
 }
 
-/*.section-two-list li::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-  background-color: #F5F4FA;
-}
-
-.section-two-list li:nth-child(1)::before {
-  background-image: url(../images/svg_icons/antenna.svg);
-  background-size: 70px;
-}
-
-.section-two-list li:nth-child(2)::before {
-  background-image: url(../images/svg_icons/clock.svg);
-  background-size: 70px;
-}
-
-.section-two-list li:nth-child(3)::before {
-  background-image: url(../images/svg_icons/diagram.svg);
-  background-size: 70px;
-}
-
-.section-two-list li:nth-child(4)::before {
-  background-image: url(../images/svg_icons/astronaut.svg);
-  background-size: 70px;
-}
-*/
-
 .section-three-main-title {
   margin-bottom: 50px;
 }
@@ -355,24 +322,18 @@ nav ul li:last-child {
   text-align: center;
 }
 
-
-
-
-
-
-
 .main-page-section-three h3 {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.143px;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--main-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .product-thumb {
-position: relative;
+  position: relative;
 }
 
 .main-page-foto-action {
@@ -384,9 +345,8 @@ position: relative;
   width: 370px;
   left: 0;
   bottom: 0;
-  background:rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.8);
 }
-
 
 .button-close {
   display: flex;
@@ -396,13 +356,12 @@ position: relative;
   height: 30px;
   background-color: var(--main-color);
   border-radius: 50%;
-  color: #000000 ;
+  color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   appearance: none;
   cursor: pointer;
   margin-top: 8px;
   margin-right: 8px;
-  
 }
 
 .modal {
@@ -413,7 +372,8 @@ position: relative;
   width: 528px;
   height: 581px;
   background-color: var(--main-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: flex;
   justify-content: end;
@@ -423,39 +383,6 @@ position: relative;
   opacity: 0;
   pointer-events: none;
 }
-
-
-
-/*.main-img-one, .main-img-two, .main-img-three {
-  position: relative;
-
-}*/
-
-/*
-.main-page-foto-action {
-  position: absolute;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 370px;
-  height: 70px;
-  top: 224px;
-  left: 0;
-  bottom: 0;
-  background:rgba(47, 48, 58, 0.8);
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 .main-page-section-three ul {
   display: flex;
@@ -556,8 +483,6 @@ position: relative;
   fill: currentColor;
 }
 
-
-
 .icon-link:hover,
 .icon-link:focus {
   background-color: var(--link-color);
@@ -605,7 +530,6 @@ position: relative;
 
 .icon-link-company {
   color: #afb1b8;
-  
 }
 
 .company-icon {
@@ -614,12 +538,13 @@ position: relative;
 .icon-link-company svg {
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-link-company  {
-transition-property: border;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+.icon-link-company {
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .main-page-section-five a:hover,
 .main-page-section-five a:focus {
@@ -717,8 +642,6 @@ address li:last-child {
   color: var(--main-color);
 }
 
-
-
 footer .container {
   display: flex;
   align-items: baseline;
@@ -746,12 +669,10 @@ footer .container {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--main-color);
-  transition-property:background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .team-icon-footer {
   fill: currentColor;
@@ -768,14 +689,13 @@ footer .container {
 }
 
 .backdrop {
-  position:fixed;
-  top:0;
-  left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-
 
 /*PORTFOLIO*/
 
@@ -823,10 +743,11 @@ div .portfolio-images li {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-images li{
-transition-property:  box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+.portfolio-images li {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .portfolio-images li:hover,
 .portfolio-images li:focus {
@@ -848,20 +769,16 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   height: 294px;
 }
 
-
 .overlay-image-portfolio:hover .overlay {
   opacity: 1;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(0);
 }
 
-
-
 .portfolio-image {
   display: block;
   width: 100%;
   height: auto;
-
 }
 
 .overlay {
@@ -876,7 +793,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   transition: transform 250ms ease;
 }
 
-.overlay> p {
+.overlay > p {
   width: 322px;
   height: 168px;
   font-size: 18px;
@@ -884,15 +801,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
 
 .button-all,
 .button-site,

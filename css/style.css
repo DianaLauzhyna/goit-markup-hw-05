@@ -332,6 +332,10 @@ nav ul li:last-child {
   color: var(--main-color);
 }
 
+.section-three-img-one, .section-three-img-three, .section-three-img-two {
+  display: block;
+}
+
 .product-thumb {
   position: relative;
 }
